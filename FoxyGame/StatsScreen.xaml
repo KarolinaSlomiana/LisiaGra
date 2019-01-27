@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="FoxyGame.StatsScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoxyGame"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+    <Grid>
+        <Image x:Name="FoxImage" HorizontalAlignment="Left" Height="280" Margin="445,40,0,0" VerticalAlignment="Top" Width="215"/>
+        <Label x:Name="StrenghtLabel" Content="Siła" HorizontalAlignment="Left" Margin="78,105,0,0" VerticalAlignment="Top" Height="30" Width="140"/>
+        <Label x:Name="NameLabel" Content="Witaj na szkoleniu Lisich Agentów, imię!" HorizontalAlignment="Left" Margin="50,26,0,0" VerticalAlignment="Top" Height="39" Width="323" FontSize="16"/>
+        <Label x:Name="StaminaLabel" Content="Wytrzymałość" HorizontalAlignment="Left" Margin="78,155,0,0" VerticalAlignment="Top" Height="30" Width="140"/>
+        <Label x:Name="AgilityLabel" Content="Zwinność" HorizontalAlignment="Left" Margin="78,205,0,0" VerticalAlignment="Top" Height="30" Width="140"/>
+        <Label x:Name="LuckLabel" Content="Szczęście" HorizontalAlignment="Left" Margin="78,255,0,0" VerticalAlignment="Top" Height="30" Width="140"/>
+        <Label x:Name="StrenghtValueLabel" Content="" HorizontalAlignment="Left" Margin="288,105,0,0" VerticalAlignment="Top" Width="39"/>
+        <Button x:Name="StrenghtMinusButton" Content="-" HorizontalAlignment="Left" Margin="258,105,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="StrenghtMinusButton_Click"/>
+        <Button x:Name="StrenghtPlusButton" Content="+" HorizontalAlignment="Left" Margin="332,105,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="StrenghtPlusButton_Click"/>
+        <Button x:Name="LuckPlusButton" Content="+" HorizontalAlignment="Left" Margin="332,255,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="LuckPlusButton_Click"/>
+        <Button x:Name="AgilityPlusButton" Content="+" HorizontalAlignment="Left" Margin="332,205,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="AgilityPlusButton_Click"/>
+        <Button x:Name="StaminaPlusButton" Content="+" HorizontalAlignment="Left" Margin="332,156,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="StaminaPlusButton_Click"/>
+        <Button x:Name="LuckMinusButton" Content="-" HorizontalAlignment="Left" Margin="258,255,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="LuckMinusButton_Click"/>
+        <Button x:Name="AgilityMinusButton" Content="-" HorizontalAlignment="Left" Margin="258,205,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="AgilityMinusButton_Click"/>
+        <Button x:Name="StaminaMinusButton" Content="-" HorizontalAlignment="Left" Margin="258,155,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="StaminaMinusButton_Click"/>
+        <Label x:Name="LuckValueLabel" Content="" HorizontalAlignment="Left" Margin="288,256,0,0" VerticalAlignment="Top" Width="39"/>
+        <Label x:Name="AgilityValueLabel" Content="" HorizontalAlignment="Left" Margin="288,205,0,0" VerticalAlignment="Top" Width="39"/>
+        <Label x:Name="StaminaValueLabel" Content="" HorizontalAlignment="Left" Margin="288,155,0,0" VerticalAlignment="Top" Width="39"/>
+        <Label x:Name="AvailablePointsLabel" Content="" HorizontalAlignment="Left" Margin="137,302,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
+        <Button x:Name="NextButton" Content="Do świata mafii" HorizontalAlignment="Left" Margin="679,311,0,0" VerticalAlignment="Top" Width="95" Height="95" Click="NextButton_Click"/>
+        <Label x:Name="TypeLabel" Content="" HorizontalAlignment="Left" Margin="469,327,0,0" VerticalAlignment="Top" Width="175" Height="30"/>
+        <Label x:Name="StatsLabel" Content="Wybierz swoje umiejętności:" HorizontalAlignment="Left" Margin="78,65,0,0" VerticalAlignment="Top" Width="197"/>
+    </Grid>
+</UserControl>

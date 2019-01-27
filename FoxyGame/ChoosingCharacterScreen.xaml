@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="FoxyGame.ChoosingCharacterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoxyGame"
+        mc:Ignorable="d"
+             Height="450" Width="800">
+    <Grid>
+        <Image x:Name="FoxImage" HorizontalAlignment="Left" Height="280" Margin="445,40,0,0" VerticalAlignment="Top" Width="215"/>
+        <Label x:Name="TypeLabel2" Content="" HorizontalAlignment="Left" Margin="490,353,0,0" VerticalAlignment="Top" Height="40" Width="130"/>
+        <Button x:Name="RightButton" Content="-&gt;" HorizontalAlignment="Left" Margin="625,353,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="24" Click="RightButton_Click"/>
+        <Button x:Name="LeftButton" Content="&lt;-" HorizontalAlignment="Left" Margin="445,353,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="24" Click="LeftButton_Click"/>
+        <Button x:Name="NextButton" Content="Dalej" HorizontalAlignment="Left" Margin="679,311,0,0" VerticalAlignment="Top" Width="95" Height="95" FontSize="24" Click="NextButton_Click"/>
+        <TextBlock x:Name="DescTextBlock" HorizontalAlignment="Left" Margin="41,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="130" Width="326"/>
+        <Label x:Name="TypeLabel1" Content="" HorizontalAlignment="Left" Margin="41,216,0,0" VerticalAlignment="Top" Width="164" Height="30"/>
+        <Label x:Name="TypeLabel" Content="Wybierz typ liska:" HorizontalAlignment="Left" Margin="504,327,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label x:Name="NameLabel" Content="Nazwij swojego liska:" HorizontalAlignment="Left" Margin="41,22,0,0" VerticalAlignment="Top" Height="25" Width="122" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="NameInputTextBox" HorizontalAlignment="Left" Height="33" Margin="41,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Opacity="0.7"/>
+
+    </Grid>
+</UserControl>
